@@ -13,7 +13,7 @@ jobs:
 
       - name: Run my own container action
         id: hello-action
-        uses: actions/hello-world-docker-action
+        uses: actions/hello-world-docker-action@v2
         with:
           who-to-greet: '@systream'
 
