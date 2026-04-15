@@ -26,4 +26,4 @@ jobs:
           echo Current branch:
           echo ${{ github.ref}}
       - name: List of all files in the repository
-        run: ls
+        run: tree
