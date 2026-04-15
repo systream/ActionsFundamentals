@@ -18,12 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: ${{github.event_name}}
+      - name: Name of the event that triggered the workflow
         run: echo "${{github.event_name}}"
 
-      - name: Current branch
+      - name: Name of the branch that the repository is currently referencing
         run: |
           echo Current branch:
           echo ${{ github.ref}}
-      - name: List files
+      - name: List of all files in the repository
         run: ls
